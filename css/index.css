@@ -1,0 +1,227 @@
+/* banner */
+.banner{
+	height: 500px;
+	background-color: #f5f5f5;
+}
+.banner .wrapper{
+	position: relative;
+	height: 500px;
+}
+.banner .aside{
+	position: absolute;
+	left: 0;
+	top: 0;
+		width: 251px;
+		height: 500px;
+		background-color: #000000;
+		opacity: 0.8;
+}
+.banner .aside li{
+	height: 50px;
+	line-height: 50px;
+}
+.banner .aside a{
+	position: relative;
+	display: block;
+	padding-left:36px;
+	padding-right: 18px;
+	/* block 宽度与父级一样 */
+	/* width: 250px; */
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+}
+.banner .aside a span{
+	font-size: 14px;
+	padding-left:15px ;
+}
+.banner .aside a:hover{
+	background-color: #27ba9b;
+}
+/* a里面最后的位置加箭头精灵图 */
+.banner .aside a::after{
+	/* after的父级是a */
+	position: absolute;
+	right: 19px;
+	top: 19px;
+	content: '';
+	width: 6px;
+	height: 11px;
+	background-image: url(../images/sprites.png);
+	background-position:-80px -110px ;
+}
+/* 箭头 */
+.prev,
+.next{
+	position: absolute;
+	top: 228px;
+	width: 45px;
+	height: 45px;
+	background-color: rgba(0,0,0,0.2);
+	background-image: url(../images/sprites.png);
+	border-radius: 50%;
+}
+.prev{
+	left: 260px;
+	background-position: 15px -60px ;
+}
+.next{
+	right: 10px;
+	background-position: -23px -60px ;
+}
+/* 圆点 */
+.banner ol{
+	position: absolute;
+	left: 600px;
+	bottom: 30px;
+	width: 200px;
+	height: 10px;
+	
+}
+.banner ol li{
+	float: left;
+	margin-right:15px ;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 50%;
+	cursor: pointer;
+}
+.banner ol .current{
+	background-color: #fff;
+}
+/* 新鲜好物 */
+.goods .hd{
+	height: 114px;
+	
+	line-height: 114px;
+}
+.goods .hd h2{
+	float: left;
+	height: 114px;
+	font-weight: 400;
+	font-size: 29px;
+}
+.goods .hd h2 span{
+	margin-left: 34px;
+	font-size: 16px;
+	color: #999;
+}
+.goods .hd a,
+.shengxian .hd .more{
+	float: right;
+	color: #999;
+}
+.goods .hd a::after,
+.shengxian .hd .more::after{
+	content: '';
+	display: inline-block;
+	margin-left: 13px;
+	width: 7px;
+	height: 13px;
+	background-image: url(../images/sprites.png);
+	background-position:  0 -110px;
+	vertical-align: middle;
+}
+.goods .bd li{position: relative;
+	float: left;
+	text-align: center;
+	margin-right: 8px;
+	width: 304px;
+	height: 405px;
+	background-color: #f0f9f4;
+}
+.goods .bd li:last-child{
+	margin-right: 0px;
+}
+.goods .bd li img{
+	width: 304px;
+}
+.goods .bd li h3{
+	margin-top: 20px;
+	margin-bottom: 10px;
+		font-family: PingFangSC-Regular;
+		font-size: 20px;
+		font-weight: 400;
+		color: #333333;	
+}
+.goods .bd li div,
+.shengxian .bd .right li div{
+		font-size: 17px;
+		color: #9a2e1f;
+}
+.goods .bd li div span{
+		font-size: 23px;
+		color: #9a2e1f;
+}
+.goods .bd li b{
+	position: absolute;
+	left:17px ;
+	top:18px ;
+	border-radius: 2pxs;
+		width: 28px;
+		height: 51px;
+		border: 1px solid #27ba9b;
+		font-family: PingFangSC-Regular;
+		font-size: 18px;
+		color: #27ba9b;
+		font-weight: 400;
+		line-height: 23px;
+}
+/* 生鲜 */
+.shengxian .hd{
+	height: 96px;
+	line-height: 96px;
+}
+.shengxian .hd h2{
+	float: left;
+	font-weight: 400;
+	font-size: 29px;
+}
+.shengxian .hd .more{
+	float: right;
+}
+.shengxian .hd ul {
+	float: right;
+	margin-right: 65px;
+}
+.shengxian .hd ul li{
+	float: left;
+}
+.shengxian .hd ul li a{
+	margin-left: 6px;
+	padding:2px 7px;
+	
+}
+.shengxian .hd ul li a:hover{
+		background-color: #27ba9b;
+		color: #fff;
+}
+.shengxian .bd .left{
+	float: left;
+	width: 240px;
+	height: 610px;
+}
+.shengxian .bd .right{
+	float: right;
+	width: 1000px;
+	height: 610px;
+}
+.shengxian .bd .right li {
+	float: left;
+	width: 242px;
+	height: 304px;
+}
+.shengxian .bd .right li a {
+	display: inline-block;
+	padding: 9px 14px 6px 7px;
+	margin-top: 10px;
+	margin-right: 65px;
+	width: 242px;
+	height: 304px;
+}
+.shengxian .bd .right li img {
+	
+	width: 184px;
+	height: 184px;
+}
